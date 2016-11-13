@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SimpleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-11-13T22:44:59" hostname="PLLL0222" time="10.275">
+  <properties/>
+  <testcase name="checkIfCorrectDataHasBeenEntered" classname="SimpleTest" time="5.479"/>
+  <testcase name="checkIfCorrectPageHasBeenLoaded" classname="SimpleTest" time="4.796"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 37624
+Only local connections are allowed.
+Nov 13, 2016 11:45:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+Nov 13, 2016 11:45:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Starting ChromeDriver 2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed) on port 22819
+Only local connections are allowed.
+Nov 13, 2016 11:45:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+Nov 13, 2016 11:45:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+</testsuite>
