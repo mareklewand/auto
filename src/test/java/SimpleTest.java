@@ -15,33 +15,24 @@ public class SimpleTest {
 
     private static WebDriver driver;
 
-    private static final String URL = "http://dist2016z.vm.wmi.amu.edu.pl:8080/registrationform/";
+    private static final String URL = "http://orange.pl";
     private static final String PATH = "build//libs//chromedriver.exe";
+    private static final String TITLE = "Orange - najlepsze okazje na internet, telefon i telewizję | Orange Polska";
 
     @Before
     public void openBrowserAndSetData(){
     	System.setProperty("webdriver.chrome.driver", PATH);
         driver = new ChromeDriver();       
         driver.get(URL);
-        setData();
     }
 
-    private void setData() {
-    	driver.findElement(By.name("firstName")).clear();
-    	driver.findElement(By.name("firstName")).sendKeys("Marek");
-	}
 
 	@Test
     public void checkIfCorrectPageHasBeenLoaded() {
         String title = driver.getTitle();
-        assertEquals("Rule Financial Registration Form", title);
+        assertEquals(TITLE, title);
     }
-	
-	@Test
-	public void checkIfCorrectDataHasBeenEntered() {
-		String checked = driver.findElement(By.name("firstName")).getAttribute("value");
-		assertEquals("Marek", checked);
-	}
+
 
     @After
     public void closeBrowser(){
